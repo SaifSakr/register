@@ -3,6 +3,7 @@ const { default: mongoose } = require("mongoose");
 const User = require("../Models/User");
 var UserSchema=mongoose.UserSchema
 const jwt=require("jsonwebtoken")
+const validator = require('validator');
 // Register User
 const registerUser = async (req, res) => {
   try {
