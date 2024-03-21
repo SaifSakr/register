@@ -2,6 +2,7 @@ const express = require("express");
 const userRouter = require("./server/Routes/user-auth")
 const { connectToDb } = require("./db"); 
 var jwt=require("jsonwebtoken")
+const validator = require('validator');
 const port = 3000;
 const app = express();
 // Connection to database
